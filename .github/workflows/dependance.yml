@@ -1,0 +1,21 @@
+name: Dépendances entre jobs
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🔨 Build terminé"
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🧪 Tests OK"
+
+  deploy:
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚀 Déploiement lancé"
