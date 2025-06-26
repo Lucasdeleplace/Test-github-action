@@ -1,1 +1,1 @@
-console.log(`${secrets.DISCORD_WEBHOOK}`);
+console.log(``);

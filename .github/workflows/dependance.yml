@@ -1,7 +1,5 @@
 name: Dépendances entre jobs
 
-
-
 on: [pull_request]
 jobs:
   build:
