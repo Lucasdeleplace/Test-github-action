@@ -1,0 +1,11 @@
+{
+  "name": "mon-app",
+  "version": "1.0.0",
+  "description": "Projet Node.js minimal pour tests CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Toi",
+  "license": "MIT"
+}
