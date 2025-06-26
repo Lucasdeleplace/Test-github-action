@@ -1,0 +1,19 @@
+name: reponse automatiques aux issues
+
+on: issues
+
+jobs: 
+    reponse-automatique:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: envoie reponse
+              uses: actions/github-script@v3
+              with:
+                github-token: ${{secrets.TOKEN_GITHUB}}
+                script: |
+                    github.issues.createComment({
+                        issue_number: context.issue.number,
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        body: 'Merci pour votre issue !'
+                    })  
