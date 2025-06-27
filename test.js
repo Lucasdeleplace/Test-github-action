@@ -1,1 +1,1 @@
-console.log(`je suis un test de script`);
+console.log(`je suis un script`);
