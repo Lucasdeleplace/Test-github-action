@@ -18,7 +18,6 @@ jobs:
             "embeds": [{
               "title": "📣 Nouvelle Pull Request",
               "description": "**${{ github.actor }}** a ouvert ou mis à jour une PR :\n[${{ github.event.pull_request.title }}](${{ github.event.pull_request.html_url }})",
-              "files": "${{ github.event.pull_request.changed_files }}",
               "footer": { 
                 "text": "GitHub PR Notification"
               },
